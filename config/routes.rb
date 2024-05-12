@@ -7,5 +7,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "practice-route", controller: "pages", action: "hello"
+  # get "practice-route", controller: "pages", action: "hello"
+  get "practice-route" => "pages#hello"
+  get "/flow" => "pages#alcy"
 end
